@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="UTF-8">
+  <title>SQL Notebook: Demo</title>
+  <link rel="stylesheet" href="demo/jquery-ui.css" type="text/css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="demo/bootstrap-tour.css" type="text/css">
+  <link rel="stylesheet" href="demo/codemirror.css">
+  <link rel="stylesheet" href="demo/style.css" type="text/css">
+  <link rel="stylesheet" href="demo/override.css" type="text/css">
+  <link rel="stylesheet" href="demo/custom.css" type="text/css">
+</head>
+
+<body class="notebook_app command_mode" 
+      data-project="" data-base-url="/" data-ws-url="" data-notebook-name="Untitled.ipynb" data-notebook-path="Untitled.ipynb">
+  
+        <div id="ipython-main-app">
+    
+        <div id="notebook_panel">
+        
+        <div tabindex="-1" id="notebook">
+        <div id="notebook-container" class="container">
+        <div tabindex="2" class="cell code_cell rendered unselected">
+      <div>
+        <h2>SQL Notebook</h2>
+        <p>You are reading this as a static document. If you have postgres and sql-notebook installed
+you can also open this file as a live notebook. It is self contained.</p>
+<p>&nbsp;</p>
+      </div>
+        <div class="input">
+        <div class="prompt input_prompt">In&nbsp;[1]:</div>
+        <div class="inner_cell">
+        <div class="ctb_hideshow">
+        <div class="celltoolbar"></div></div>
+        <div class="input_area">
+        <div class="CodeMirror cm-s-ipython">
+        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.6001px; left: 114.8px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off"></textarea></div>
+        <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+        <div style="min-width: 1px; height: 0px;"></div></div>
+        <div style="" not-content="true" class="CodeMirror-hscrollbar">
+        <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+        <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+        <div not-content="true" class="CodeMirror-gutter-filler"></div>
+        <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+        <div style="margin-left: 0px; min-width: 112.2px; margin-bottom: 0px; border-right-width: 30px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+        <div style="position: relative; top: 0px;">
+        <div class="CodeMirror-lines">
+        <div style="position: relative; outline: medium none;">
+        <div class="CodeMirror-measure"></div>
+        <div class="CodeMirror-measure"></div>
+        <div style="position: relative; z-index: 1;"></div>
+        <div style="visibility: hidden;" class="CodeMirror-cursors">
+        <div style="left: 109.2px; top: 0px; height: 17px;" class="CodeMirror-cursor">&nbsp;</div></div>
+        <div class="CodeMirror-code"><pre class=""><span>&#9658; ...2800 lines hidden...</span></pre></div></div></div></div></div>
+        <div style="position: absolute; height: 30px; width: 1px; top: 28px;"></div>
+        <div style="display: none; height: 58px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+        <div style="display: none;" class="widget-area">
+        <div class="prompt"><button class="close">×</button></div>
+        <div class="widget-subarea"></div></div>
+        <div class="output_wrapper">
+        <div title="click to scroll output; double click to hide" class="out_prompt_overlay prompt" style="display: none;"></div>
+      <div style="" class="output">
+      <div class="output_area">
+      <div class="prompt"></div>
+      <div class="output_subarea output_text output_stream output_stdout"><pre>CREATE TABLE
+ALTER TABLE
+CREATE SEQUENCE
+ALTER TABLE
+ALTER SEQUENCE
+ALTER TABLE
+COPY 2706
+ setval 
+--------
+   2706
+(1 row)
+
+ALTER TABLE
+</pre></div></div>
+        <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div>
+        <div tabindex="2" class="cell code_cell rendered selected">
+        <div class="input">
+        <div class="prompt input_prompt">In&nbsp;[2]:</div>
+        <div class="inner_cell">
+        <div class="ctb_hideshow">
+        <div class="celltoolbar"></div></div>
+        <div class="input_area">
+        <div class="CodeMirror cm-s-ipython">
+      <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 22.6px; left: 72.8px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off">select program,degree,semester, starts,title from plans 
+where lecturetype is not null limit 10</textarea></div>
+      <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+      <div style="min-width: 1px; height: 0px;"></div></div>
+      <div style="right: 0px; left: 0px;" not-content="true" class="CodeMirror-hscrollbar">
+      <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+      <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+      <div not-content="true" class="CodeMirror-gutter-filler"></div>
+      <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+      <div style="margin-left: 0px; min-width: 868.2px; margin-bottom: 0px; border-right-width: 30px; min-height: 45px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+      <div style="position: relative; top: 0px;">
+      <div class="CodeMirror-lines">
+      <div style="position: relative; outline: medium none;">
+      <div class="CodeMirror-measure"><pre>x</pre></div>
+      <div class="CodeMirror-measure"></div>
+      <div style="visibility: hidden;" class="CodeMirror-cursors"></div>
+      <div class="CodeMirror-code"><pre class=""><span><span class="cm-variable">select</span> <span class="cm-variable">program</span>,<span class="cm-variable">degree</span>,<span class="cm-variable">semester</span>, <span class="cm-variable">starts</span>,<span class="cm-variable">title</span> <span class="cm-keyword">from</span> <span class="cm-variable">plans</span> 
+<span class="cm-variable">where</span>  <span class="cm-variable">lecturetype</span> <span class="cm-operator">is</span> <span class="cm-operator">not</span> <span class="cm-variable">null</span> <span class="cm-variable">limit</span> <span class="cm-number">10</span></span></pre></div></div></div></div></div>
+      <div style="display: none; height: 75px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+      <div style="display: none;" class="widget-area">
+      <div class="prompt"><button class="close">×</button></div>
+      <div class="widget-subarea"></div></div>
+      <div class="output_wrapper">
+      <div title="click to scroll output; double click to hide" class="out_prompt_overlay prompt" style=""></div>
+      <div style="" class="output">
+      <div class="output_area">
+      <div class="prompt"></div>
+      <div class="output_subarea output_text output_stream output_stdout"><pre>10 rows affected.
+</pre></div></div>
+      <div class="output_area">
+      <div class="prompt output_prompt">Out[2]:</div>
+      <div class="output_subarea output_html rendered_html output_result"><table>
+  <tbody><tr>
+      <th>program</th>
+      <th>degree</th>
+      <th>semester</th>
+      <th>starts</th>
+      <th>title</th>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 10:00:00</td>
+      <td>Einführung Computernetzwerke</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 12:30:00</td>
+      <td>Angewandte Mathematik 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 14:15:00</td>
+      <td>Webprogrammierung 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 09:00:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 10:45:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 12:30:00</td>
+      <td>Einführung Multimedia</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 14:15:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-28 13:30:00</td>
+      <td>Angewandte Mathematik 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-28 15:15:00</td>
+      <td>Einführung Datenbanken</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-30 09:00:00</td>
+      <td>Einführung Datenbanken</td>
+  </tr>
+</tbody></table></div></div></div>
+      <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div>
+      <div tabindex="2" class="cell code_cell unrendered unselected">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[3]:</div>
+      <div class="inner_cell">
+      <div class="ctb_hideshow">
+      <div class="celltoolbar"></div></div>
+      <div class="input_area">
+      <div class="CodeMirror cm-s-ipython">
+      <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.59999px; left: 5.59999px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off"></textarea></div>
+      <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+      <div style="min-width: 1px; height: 0px;"></div></div>
+      <div style="right: 0px; left: 0px;" not-content="true" class="CodeMirror-hscrollbar">
+      <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+      <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+      <div not-content="true" class="CodeMirror-gutter-filler"></div>
+      <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+      <div style="margin-left: 0px; min-width: 843px; margin-bottom: 0px; border-right-width: 30px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+      <div style="position: relative; top: 0px;">
+      <div class="CodeMirror-lines">
+      <div style="position: relative; outline: medium none;">
+      <div class="CodeMirror-measure"></div>
+      <div class="CodeMirror-measure"></div>
+      <div style="position: relative; z-index: 1;"></div>
+      <div style="visibility: hidden;" class="CodeMirror-cursors">
+      <div style="left: 0px; top: 0px; height: 17px;" class="CodeMirror-cursor">&nbsp;</div></div>
+      <div class="CodeMirror-code"><pre class=""><span><span class="cm-variable">select</span> <span class="cm-variable">program</span>,<span class="cm-variable">degree</span>,<span class="cm-variable">semester</span>, <span class="cm-variable">starts</span>,<span class="cm-variable">title</span> <span class="cm-keyword">from</span> <span class="cm-variable">plans</span> 
+<span class="cm-variable">where</span>  <span class="cm-variable">lecturetype</span> <span class="cm-operator">is</span> <span class="cm-operator">not</span> <span class="cm-variable">null</span> <span class="cm-variable">limit</span> <span class="cm-number">10</span></span></pre></div></div></div></div></div>
+      <div style="position: absolute; height: 30px; width: 1px; top: 28px;"></div>
+      <div style="display: none; height: 58px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+      <div style="display: none;" class="widget-area">
+      <div class="prompt"><button class="close">×</button></div>
+      <div class="widget-subarea"></div></div>
+      <div class="output_wrapper">
+      <div title="click to scroll output; double click to hide" class="out_prompt_overlay prompt" style=""></div>
+      <div style="" class="output">
+      <div class="output_area">
+      <div class="prompt"></div>
+      <div class="output_subarea output_text output_stream output_stdout"><pre>10 rows affected.
+</pre></div></div>
+      <div class="output_area">
+      <div class="prompt output_prompt">Out[3]:</div>
+      <div class="output_subarea output_html rendered_html output_result"><table>
+  <tbody><tr>
+      <th>program</th>
+      <th>degree</th>
+      <th>semester</th>
+      <th>starts</th>
+      <th>title</th>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 10:00:00</td>
+      <td>Einführung Computernetzwerke</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 12:30:00</td>
+      <td>Angewandte Mathematik 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-23 14:15:00</td>
+      <td>Webprogrammierung 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 09:00:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 10:45:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 12:30:00</td>
+      <td>Einführung Multimedia</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-25 14:15:00</td>
+      <td>Einführung Programmierung</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-28 13:30:00</td>
+      <td>Angewandte Mathematik 1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-28 15:15:00</td>
+      <td>Einführung Datenbanken</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>2015-09-30 09:00:00</td>
+      <td>Einführung Datenbanken</td>
+  </tr>
+</tbody></table></div></div></div>
+      <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div>
+      <div tabindex="2" class="cell code_cell rendered unselected">
+      <div class="input">
+      <div class="prompt input_prompt">In&nbsp;[4]:</div>
+      <div class="inner_cell">
+      <div class="ctb_hideshow">
+      <div class="celltoolbar"></div></div>
+      <div class="input_area">
+      <div class="CodeMirror cm-s-ipython">
+      <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.60001px; left: 477.867px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off">MMT</textarea></div>
+      <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+      <div style="min-width: 1px; height: 0px;"></div></div>
+      <div style="display: block; right: 0px; left: 0px;" not-content="true" class="CodeMirror-hscrollbar">
+      <div style="height: 100%; min-height: 1px; width: 1615.8px;"></div></div>
+      <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+      <div not-content="true" class="CodeMirror-gutter-filler"></div>
+      <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+      <div style="margin-left: 0px; min-width: 1615.8px; margin-bottom: 0px; border-right-width: 30px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+      <div style="position: relative; top: 0px;">
+      <div class="CodeMirror-lines">
+      <div style="position: relative; outline: medium none;">
+      <div class="CodeMirror-measure"></div>
+      <div class="CodeMirror-measure"></div>
+      <div style="position: relative; z-index: 1;"></div>
+      <div style="visibility: hidden;" class="CodeMirror-cursors">
+      <div style="left: 932.4px; top: 0px; height: 17px;" class="CodeMirror-cursor">&nbsp;</div></div>
+      <div class="CodeMirror-code"><pre class=""><span><span class="cm-variable">select</span> <span class="cm-variable">program</span>,<span class="cm-variable">degree</span>,<span class="cm-variable">semester</span>, <span class="cm-variable">title</span>, <span class="cm-variable">count</span>(<span class="cm-operator">*</span>) <span class="cm-keyword">from</span> <span class="cm-variable">plans</span>  
+<span class="cm-variable">where</span> <span class="cm-variable">lecturetype</span> <span class="cm-operator">is</span> <span class="cm-operator">not</span> <span class="cm-variable">null</span> <span class="cm-operator">and</span> <span class="cm-variable">program</span>=<span class="cm-string">'MMT'</span> <span class="cm-variable">group</span> <span class="cm-variable">by</span> <span class="cm-variable">program</span>,<span class="cm-variable">degree</span>,<span class="cm-variable">semester</span>, <span class="cm-variable">title</span>  
+<span class="cm-variable">order</span> <span class="cm-variable">by</span> <span class="cm-variable">program</span>,<span class="cm-variable">degree</span>,<span class="cm-variable">semester</span>,<span class="cm-variable">title</span></span></pre></div></div></div></div></div>
+      <div style="position: absolute; height: 30px; width: 1px; top: 28px;"></div>
+      <div style="display: none; height: 58px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+      <div style="display: none;" class="widget-area">
+      <div class="prompt"><button class="close">×</button></div>
+      <div class="widget-subarea"></div></div>
+      <div class="output_wrapper">
+      <div title="click to scroll output; double click to hide" class="out_prompt_overlay prompt" style=""></div>
+      <div style="" class="output">
+      <div class="output_area">
+      <div class="prompt"></div>
+      <div class="output_subarea output_text output_stream output_stdout"><pre>53 rows affected.
+</pre></div></div>
+      <div class="output_area">
+      <div class="prompt output_prompt">Out[4]:</div>
+      <div class="output_subarea output_html rendered_html output_result"><table>
+  <tbody><tr>
+      <th>program</th>
+      <th>degree</th>
+      <th>semester</th>
+      <th>title</th>
+      <th>count</th>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>-</td>
+      <td>None</td>
+      <td>MMT-GASTVORTRAG: H. Lanninger</td>
+      <td>5</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>-</td>
+      <td>None</td>
+      <td>MMT-GASTVORTRAG: H. Lannigner - 17:00</td>
+      <td>5</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>3D Modellierung und Animation</td>
+      <td>28</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Angewandte Mathematik 1</td>
+      <td>43</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Einführung Computernetzwerke</td>
+      <td>19</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Einführung Datenbanken</td>
+      <td>27</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Einführung Multimedia</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Einführung Programmierung</td>
+      <td>42</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Konzeptentwicklung</td>
+      <td>76</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Personaler Reflexionsprozess 1</td>
+      <td>21</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Schreibwerkstatt</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>1</td>
+      <td>Webprogrammierung 1</td>
+      <td>25</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Angewandte Statistik</td>
+      <td>22</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Backend Development 1</td>
+      <td>29</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Content Management Systeme</td>
+      <td>32</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Frontend Development 1</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Game Development 1</td>
+      <td>28</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Grundlagen Human-Computer Interaction</td>
+      <td>24</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Interaction Design</td>
+      <td>4</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Interactive Prototyping &amp; Physical Computing 1</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Mixed Reality 1</td>
+      <td>16</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Mobile Applications 1</td>
+      <td>17</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Multimedia Processing</td>
+      <td>21</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Software Design Pattern</td>
+      <td>21</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Software Projektmanagement</td>
+      <td>24</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Study &amp; Presentationskills</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Teamorientierter Reflexionsprozess 1</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Vertiefung Computergrafik</td>
+      <td>14</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>3</td>
+      <td>Web Production Workflows</td>
+      <td>7</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>5</td>
+      <td>Berufspraktikum:  PRAESENTATION GAME</td>
+      <td>6</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>5</td>
+      <td>Berufspraktikum:  PRAESENTATION WEB</td>
+      <td>6</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>5</td>
+      <td>Multimediaprojekt 3:  Vorbereitung  ZWISCHENPRAESENTATION</td>
+      <td>64</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>None</td>
+      <td>Tutorium Mathematik</td>
+      <td>7</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>B</td>
+      <td>None</td>
+      <td>Tutorium Programmierung</td>
+      <td>7</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Advanced Human-Computer Interaction</td>
+      <td>40</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Agiles Projektmanagement</td>
+      <td>16</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Data Analysis</td>
+      <td>21</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Game Artificial Intelligence</td>
+      <td>40</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Game Design &amp; Playable Media</td>
+      <td>46</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Innovationscoaching 1</td>
+      <td>8</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Komplexe Softwaresysteme 1</td>
+      <td>23</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Moderation von Gruppen</td>
+      <td>8</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Semantic Web &amp; Data Engineering</td>
+      <td>32</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Symposium: Ethik &amp; Nachhaltigkeit/VORBEREITUNG</td>
+      <td>1</td>
+  </tr>
+  <tr>
+      <td>MMT</td>
+      <td>M</td>
+      <td>1</td>
+      <td>Visual Analytics</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Entrepreneurship</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>IT-Recht</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Innovationscoaching 3</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Intelligent Systems 2</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Intercultural Communication &amp; Gender Studies</td>
+        <td>16</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Projektreflexion 2</td>
+        <td>8</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Research Seminar 2</td>
+        <td>26</td>
+    </tr>
+    <tr>
+        <td>MMT</td>
+        <td>M</td>
+        <td>3</td>
+        <td>Sales &amp; Marketing</td>
+        <td>7</td>
+    </tr>
+  </tbody></table></div></div></div>
+        <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div>
+        <div tabindex="2" class="cell code_cell rendered unselected">
+        <div class="input">
+        <div class="prompt input_prompt">In&nbsp;[5]:</div>
+        <div class="inner_cell">
+        <div class="ctb_hideshow">
+        <div class="celltoolbar"></div></div>
+        <div class="input_area">
+        <div class="CodeMirror cm-s-ipython">
+        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.60004px; left: 266px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off"></textarea></div>
+        <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+        <div style="min-width: 1px; height: 0px;"></div></div>
+        <div style="" not-content="true" class="CodeMirror-hscrollbar">
+        <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+        <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+        <div not-content="true" class="CodeMirror-gutter-filler"></div>
+        <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+        <div style="margin-left: 0px; min-width: 263.4px; margin-bottom: 0px; border-right-width: 30px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+        <div style="position: relative; top: 0px;">
+        <div class="CodeMirror-lines">
+        <div style="position: relative; outline: medium none;">
+        <div class="CodeMirror-measure"></div>
+        <div class="CodeMirror-measure"></div>
+        <div style="position: relative; z-index: 1;"></div>
+        <div style="" class="CodeMirror-cursors">
+        <div style="left: 260.4px; top: 0px; height: 17px;" class="CodeMirror-cursor">&nbsp;</div></div>
+        <div class="CodeMirror-code"><pre class=""><span><span class="cm-variable">SELECT</span> <span class="cm-variable">count</span>(<span class="cm-operator">*</span>) <span class="cm-keyword">from</span> <span class="cm-variable">plans</span></span></pre></div></div></div></div></div>
+        <div style="position: absolute; height: 30px; width: 1px; top: 28px;"></div>
+        <div style="display: none; height: 58px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+        <div style="display: none;" class="widget-area">
+        <div class="prompt"><button class="close">×</button></div>
+        <div class="widget-subarea"></div></div>
+        <div class="output_wrapper">
+        <div title="click to scroll output; double click to hide" class="out_prompt_overlay prompt" style=""></div>
+        <div style="" class="output">
+        <div class="output_area">
+        <div class="prompt"></div>
+        <div class="output_subarea output_text output_stream output_stdout"><pre>1 rows affected.
+  </pre></div></div>
+        <div class="output_area">
+        <div class="prompt output_prompt">Out[5]:</div>
+        <div class="output_subarea output_html rendered_html output_result"><table>
+    <tbody><tr>
+        <th>count</th>
+    </tr>
+    <tr>
+        <td>2706</td>
+    </tr>
+  </tbody></table></div></div></div>
+        <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div>
+        <div tabindex="2" class="cell code_cell unrendered unselected">
+        <div class="input">
+        <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+        <div class="inner_cell">
+        <div class="ctb_hideshow">
+        <div class="celltoolbar"></div></div>
+        <div class="input_area">
+        <div class="CodeMirror cm-s-ipython">
+        <div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 5.60001px; left: 5.59999px;"><textarea tabindex="0" spellcheck="false" autocapitalize="off" autocorrect="off" style="position: absolute; padding: 0px; width: 1px; height: 1em; outline: medium none;" wrap="off"></textarea></div>
+        <div style="min-width: 18px;" not-content="true" class="CodeMirror-vscrollbar">
+        <div style="min-width: 1px; height: 0px;"></div></div>
+        <div style="" not-content="true" class="CodeMirror-hscrollbar">
+        <div style="height: 100%; min-height: 1px; width: 0px;"></div></div>
+        <div not-content="true" class="CodeMirror-scrollbar-filler"></div>
+        <div not-content="true" class="CodeMirror-gutter-filler"></div>
+        <div draggable="true" tabindex="-1" class="CodeMirror-scroll">
+        <div style="margin-left: 0px; min-width: 3px; margin-bottom: 0px; border-right-width: 30px; min-height: 28px; padding-right: 0px; padding-bottom: 0px;" class="CodeMirror-sizer">
+        <div style="position: relative; top: 0px;">
+        <div class="CodeMirror-lines">
+        <div style="position: relative; outline: medium none;">
+        <div class="CodeMirror-measure"></div>
+        <div class="CodeMirror-measure"></div>
+        <div style="position: relative; z-index: 1;"></div>
+        <div style="visibility: hidden;" class="CodeMirror-cursors">
+        <div style="left: 0px; top: 0px; height: 17px;" class="CodeMirror-cursor">&nbsp;</div></div>
+        <div class="CodeMirror-code"><pre class=""><span><span>​</span></span></pre></div></div></div></div></div>
+        <div style="position: absolute; height: 30px; width: 1px; top: 28px;"></div>
+        <div style="display: none; height: 58px;" class="CodeMirror-gutters"></div></div></div></div></div></div>
+        <div style="display: none;" class="widget-area">
+        <div class="prompt"><button class="close">×</button></div>
+        <div class="widget-subarea"></div></div>
+        <div class="output_wrapper">
+        <div title="click to expand output; double click to hide output" class="out_prompt_overlay prompt" style="display: none;"></div>
+        <div style="display: none;" class="output"></div>
+        <div title="click to expand output" class="btn btn-default output_collapsed" style="display: none;">. . .</div></div></div></div>
+        <div class="end_space"></div></div>
+        
+        <div id="tooltip" class="ipython_tooltip" style="display:none">
+        <div class="tooltipbuttons"><a class="ui-button" role="button" href="#"><span class="ui-icon ui-icon-close">Close</span></a><a title="Grow the tooltip vertically (press shift-tab twice)" id="expanbutton" role="button" class="ui-corner-all" href="#"><span class="ui-icon ui-icon-plus">Expand</span></a><a title="show the current docstring in pager (press shift-tab 4 times)" class="ui-button" role="button" href="#"><span class="ui-icon ui-icon-arrowstop-l-n">Open in Pager</span></a><a style="display: none;" title="Tooltip will linger for 10 seconds while you type" class="ui-button" role="button" href="#"><span class="ui-icon ui-icon-clock">Close</span></a></div>
+        <div class="pretooltiparrow"></div>
+        <div class="tooltiptext smalltooltip"></div></div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+
+
+
+</body></html>
